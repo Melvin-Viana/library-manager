@@ -1,0 +1,27 @@
+{
+  "name": "project10-build-a-library-manager-treehouse",
+  "version": "0.0.1",
+  "description":"Library Database Management system",
+  "main":"./bin/www",
+  "private": true,
+  "scripts": {
+    "dev":"NODE_ENV=development",
+    "testEnv":"NODE_ENV=test",
+    "start": "NODE_ENV=production node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "^1.6.3",
+    "method-override": "^3.0.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25",
+    "morgan": "~1.9.0",
+    "pug": "^2.0.3",
+    "sequelize": "^4.38.0",
+    "sequelize-cli": "^4.0.0",
+    "sqlite3": "^4.0.2"
+  }
+}

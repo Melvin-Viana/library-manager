@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+    include book_layout.pug
+    table
+        thead
+            tr
+                th Title
+                th Author
+                th Genre
+                th Year Released
+        tbody
+            each book in books
+                tr
+                    td
+                        a(href=`${book.id}`)=book.title
+                    td=book.author
+                    td=book.genre
+                    td=book.first_published

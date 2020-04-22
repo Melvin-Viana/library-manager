@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+    include loan_layout
+    table
+        thead
+            tr
+                th Book
+                th Patron
+                th Loaned on
+                th Return by
+                th Returned on
+                th(class="action--heading") Action
+            each loan in loans
+                tr
+                    td
+                        a(href=`/books/${loan.book_id}`) #{loan.book.title}
+                    td
+                        a(href=`/patrons/${loan.patron_id}`) #{loan.patron.first_name} #{loan.patron.last_name}
+                    td=loan.loaned_on
+                    td=loan.return_by
+                    td=loan.returned_on
+                    td
+                        if !loan.returned_on
+                            a(class="button" href=`return/${loan.id}`) Return Book

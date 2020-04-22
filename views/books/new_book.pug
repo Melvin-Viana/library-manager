@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+  p Create a new book!
+
+  h1 New Book
+
+  form(method='POST')
+    p
+      label(for='title') Title
+      input#title(type='text' name='title' maxlength='64' )
+    p
+      label(for='author') Author
+      input#author(type='text' name='author' maxlength='64' )
+    p
+      label(for='genre') Genre
+      input#genre(type='text' name='genre' maxlength='64' )
+    p
+      label(for='first_published') First Published
+      input#first_published(type='text' name='first_published' maxlength='4')
+    p
+      input(type='submit', value='Create New Book')
+  if errors
+    h3 Invalid input, see errors below:
+    ul
+      each error in errors
+        li(class='error') #{error.message}

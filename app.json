@@ -1,0 +1,7 @@
+{
+    "name":"Library DBMS",
+    "description":"A Database management system using Sequelize",
+    "repository":"https://github.com/Melvin-Viana/Project10-Build_A_Library_manager-Treehouse",
+    "keywords":["node","express","sequelize"],
+    "image":"heroku/nodejs"
+}
