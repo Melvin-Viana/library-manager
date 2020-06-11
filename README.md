@@ -1,12 +1,7 @@
-# Build a Library Manager
-Team :deciduous_tree: :house:
+Library Manager
 
-* A library management application using a SQlite Database
-& the Sequelize ORM.
-
-
+* Simple Library Database management system using a simple SQLite database.
 <img src ='http://docs.sequelizejs.com/manual/asset/logo-small.png' width=100px/>
-
 
 ### Prerequisites
 Required software:
