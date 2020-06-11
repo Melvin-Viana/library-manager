@@ -1,4 +1,4 @@
-Library Manager
+# Library Manager
 > Simple Library Database management system using a simple SQLite database.
 <img src ='http://docs.sequelizejs.com/manual/asset/logo-small.png' width=100px/>
 
